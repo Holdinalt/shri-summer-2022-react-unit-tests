@@ -1,0 +1,178 @@
+body{
+    background: #F5F5F5;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 307px;
+    padding: 16px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    .productImage{
+
+        height: 400px;
+
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            padding: 16px;
+
+            > img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .stickers{
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 9px;
+
+                > div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    padding: 3px 5px;
+                    border-radius: 4px;
+
+                    > span{
+                        font-family: 'Inter', serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 14px;
+                        /* identical to box height, or 127% */
+
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+
+                        color: #FFFFFF;
+                    }
+                }
+
+                .saleSticker{
+                    background: #11C66C;
+                }
+
+                .hitSticker{
+                    background: #F53D3D;
+                }
+            }
+        }
+    }
+
+    .productInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        > span{
+            font-family: 'Inter', serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+
+            /* Gray 400 */
+
+            color: #434851;
+        }
+
+        .price{
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            font-family: 'Inter', serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+
+            color: #141A25;
+
+            .old{
+                text-decoration-line: line-through;
+            }
+
+            .currentHighlighted{
+                color: #F20D0D;
+            }
+        }
+
+        .productMetrics{
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+
+            > div{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                > span{
+                    font-family: 'Inter', serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    /* identical to box height, or 114% */
+
+
+                    /* Gray 300 */
+
+                    color: #72757C;
+                }
+            }
+        }
+    }
+
+    .buttonGroup{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > div{
+            height: 48px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .cartButton{
+            background: #CFF4E2;
+            padding: 12px 24px;
+        }
+
+        .cartButton:hover{
+            background: #70DDA7;
+        }
+
+        .buyNowButton{
+            padding: 12px 20px;
+            background: #F6F6F6;
+        }
+
+
+    }
+}
+
+
+
